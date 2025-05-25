@@ -1,3 +1,4 @@
+
 <template>
     <div class="app">
         <div class="app-header">
@@ -7,9 +8,9 @@
             </button>
         </div>
         <div class="app-content">
-            <ZBottomSheet
+            <BottomSheet
                 ref="bottomSheetRef"
-                v-model="isOpen"
+                :model-value="isOpen"
             >
                 <p>Additional content can go here.</p>
                 <div class="actions">
@@ -17,17 +18,20 @@
                     <button @click="bottomSheetRef?.expand()">Expand</button>
                     <button @click="bottomSheetRef?.collapse()">Collapse</button>
                 </div>
-            </ZBottomSheet>
+            </BottomSheet>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
 import { ref, useTemplateRef } from 'vue';
+import BottomSheet from './components/bottomSheet.vue';
 
 const isOpen = ref(false);
 const bottomSheetRef = useTemplateRef('bottomSheetRef');
+
 </script>
 
 <style scoped>
+
 </style>
