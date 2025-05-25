@@ -1,0 +1,23 @@
+{
+    "name": "@zephkelly/vue-sheet",
+    "private": false,
+    "scripts": {
+        "build": "pnpm -r build",
+        "dev": "pnpm -r dev",
+        "clean": "pnpm -r clean",
+        "build:lib": "pnpm --filter @zephkelly/vue-sheet-lib build",
+        "build:vue": "pnpm --filter @zephkelly/vue-sheet build",
+        "build:nuxt": "pnpm --filter @zephkelly/nuxt-sheet build"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0",
+        "vite": "^5.0.0"
+    },
+    "author": "zephkelly",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zephkelly/vue-sheet/issues"
+    },
+    "homepage": "https://github.com/zephkelly/vue-sheet#readme"
+}
